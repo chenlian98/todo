@@ -1,0 +1,32 @@
+body, ul, ol, li, p, dl, dt, dd {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+table {
+  border-collapse: collapse;
+}
+

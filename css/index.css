@@ -1,0 +1,29 @@
+@import "../lib/awesome-font/css/font-awesome.min.css";
+@import "../lib/animate.min.css";
+@import "bootstrap/dist/css/bootstrap.css";
+
+.list {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.list .list-group-item {
+  border-color: #0c8ed9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list .list-group-item i {
+  cursor: pointer;
+  transition: .3s;
+}
+
+.list .list-group-item i:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+
+.form-todo {
+  margin: 20px 0;
+}
+

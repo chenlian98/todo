@@ -1,0 +1,24 @@
+{
+  "name": "TodoListNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "json-server": "^0.15.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "db": "json-server --watch db.json",
+    "dev": "parcel ./*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
