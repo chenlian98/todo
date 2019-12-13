@@ -16,7 +16,7 @@
   },
   "scripts": {
     "db": "json-server --watch db.json",
-    "dev": "parcel ./*.html"
+    "dev": "rm -rf dist & parcel ./*.html"
   },
   "keywords": [],
   "author": "",
