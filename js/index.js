@@ -1,3 +1,7 @@
+/*
+import jQuery from 'jquery'
+console.log(jQuery)
+*/
 
 // const axios = require('axios');
 import {$, $$, myAjax} from './tools'
