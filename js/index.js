@@ -8,7 +8,7 @@ import {$, $$, myAjax} from './tools'
 
 let deleteBtn
 
-const getList = () => {
+const getList = (eve) => {
   myAjax({
     url: 'http://localhost:3000/todo',
     method: 'GET',
@@ -42,7 +42,8 @@ const getList = () => {
 
 getList()
 const todoInput = $('.form-todo input[type=text]')
-$('#create-todo').addEventListener('click', function () {
+//封装函数
+function POSTf() {
   myAjax({
     url: 'http://localhost:3000/todo',
     method: 'POST',
@@ -53,5 +54,24 @@ $('#create-todo').addEventListener('click', function () {
     todoInput.value = ''
     getList()
   }).catch(e => console.log(e))
-
+}
+$('#create-todo').addEventListener('keydown', function (e) {
+  //debugger
+  //console.log(e.keyCode)
+ if(todoInput.value === '') {
+   console.log('空')
+  }else if(e.keyCode === 13) {
+   POSTf()
+ }
 })
+
+$('#create-todo').addEventListener('click', function () {
+  //debugger
+  console.log(todoInput.value.length)
+  if(todoInput.value === '' || todoInput.value.length >= 10 ) {
+    alert('空');
+  }else{
+    POSTf()
+  }
+})
+

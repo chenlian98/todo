@@ -7,7 +7,6 @@ function getOne() {
     url: `http://localhost:3000/todo/${getQuery('objectId')}`,
   }).then(res => {
     const { id, title } = res.data
-
     $('.form-group input[type=text]').value = title
     $('button[type=submit]').setAttribute('data-id', id)
   })

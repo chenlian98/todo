@@ -1,7 +1,6 @@
 {
-  "name": "TodoListNode",
+  "name": "todolistnode",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -21,5 +20,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkoojohn/TodoListNode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidkoojohn/TodoListNode/issues"
+  },
+  "homepage": "https://github.com/davidkoojohn/TodoListNode#readme",
+  "description": ""
 }
